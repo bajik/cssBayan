@@ -4,30 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>CSS Bayan</title>
 </head>
 <body>
-  <div class="head"><h1 class="head__title">CSS Bayan</h1></div>
-  <div class="bayan">
-    <div class="bayan__item bayan__item--show">
-      <div class="bayan__header">You can't jast copy and paste CSS</div>
-      <div class="bayan__body"></div>
+  <div class="wrapper">
+    <div class="head">
+      <h1 class="head__title">CSS Bayan</h1>
     </div>
-    <div class="bayan__item">
-      <div class="bayan__header">Keep calm and cary on</div>
-      <div class="bayan__body"></div>
-    </div>
-    <div class="bayan__item">
-      <div class="bayan__header">Work-life balance</div>
-      <div class="bayan__body"></div>
-    </div>
-    <div class="bayan__item">
-      <div class="bayan__header">Dude, where is JS</div>
-      <div class="bayan__body"></div>
-    </div>
-    <div class="bayan__item">
-      <div class="bayan__header">Relax and take it easy</div>
-      <div class="bayan__body"></div>
+    <div class="bayan">
+      <input class="bayan__input" type="radio" id="item1" name="item_btn" checked>
+      <label class="bayan__item" for="item1">
+        <div class="bayan__header">
+          <div class="bayan__item-title">You can't jast copy and paste CSS</div>
+          <div class="bayan__item-icon"></div>
+        </div>
+        <div class="bayan__body">
+          <div class="bayan__body-title">You can't jast copy and paste CSS</div>
+          <div class="bayan__body-img">
+            <img src="./assets/jpg/img1.png" alt="You can't jast copy and paste CSS">
+          </div>
+        </div>
+      </label>
+      <input class="bayan__input" type="radio" id="item2" name="item_btn">
+      <label class="bayan__item" for="item2">
+        <div class="bayan__header">
+          <div class="bayan__item-title">Keep calm and carry on</div>
+          <div class="bayan__item-icon"></div>
+        </div>
+        <div class="bayan__body">
+          <div class="bayan__body-title">Keep calm and carry on</div>
+          <div class="bayan__body-img">
+            <img src="./assets/jpg/img2.png" alt="Keep calm and carry on">
+          </div>
+        </div>
+      </label>
+      <input class="bayan__input" type="radio" id="item3" name="item_btn">
+      <label class="bayan__item" for="item3">
+        <div class="bayan__header">
+          <div class="bayan__item-title">Work-life balance</div>
+          <div class="bayan__item-icon"></div>
+        </div>
+        <div class="bayan__body">
+          <div class="bayan__body-title">Work-life balance</div>
+          <div class="bayan__body-img">
+            <img src="./assets/jpg/img3.png" alt="Work-life balance">
+          </div>
+        </div>
+      </label>
+      <input class="bayan__input" type="radio" id="item4" name="item_btn">
+      <label class="bayan__item" for="item4">
+        <div class="bayan__header">
+          <div class="bayan__item-title">Dude, where is JS</div>
+          <div class="bayan__item-icon"></div>
+        </div>
+        <div class="bayan__body">
+          <div class="bayan__body-title">Dude, where is JS</div>
+          <div class="bayan__body-img">
+            <img src="./assets/jpg/img4.png" alt="Dude, where is JS">
+          </div>
+        </div>
+      </label>
+      <input class="bayan__input" type="radio" id="item5" name="item_btn">
+      <label class="bayan__item" for="item5">
+        <div class="bayan__header">
+          <div class="bayan__item-title">Relax and take it easy</div>
+          <div class="bayan__item-icon"></div>
+        </div>
+        <div class="bayan__body">
+          <div class="bayan__body-title">Relax and take it easy</div>
+          <div class="bayan__body-img">
+            <img src="./assets/jpg/img5.png" alt="Relax and take it easy">
+          </div>
+        </div>
+      </label>
     </div>
   </div>
 </body>
