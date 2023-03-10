@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;  
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bayan__body {
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.bayan:hover .bayan__item-icon {
+  visibility: visible;
+}
+.bayan:hover .bayan__item-title {
+  color: #111;
+}
+
+.bayan__item {  
+  cursor: pointer;
+  display: block;
+  border-top: 0.0625rem solid #111;
+  padding: 1rem; 
+}
+
+.bayan__item-title {
+  font-weight: 600;
+  color: blue;
+}
+
+.bayan__body-title {
+  text-align: center;
+}
+
+.bayan__body {
+  display: none;
+  padding-top: 1.3rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.bayan__input {
+  appearance: none;
+  display: none;
+}
+
+.bayan__input:checked + .bayan__item .bayan__body {
+  display: flex;
+  animation: none;
+}
+
+.bayan__input:checked + .bayan__item .bayan__item-title {
+  color: #111;
+}
+
+.bayan__input:checked + .bayan__item .bayan__item-icon, 
+.bayan__item:hover .bayan__item-icon {
+  background: url("./assets/icon/times.svg") no-repeat center;
+  transition: all 0.1s;
+}
+
+.bayan__item:hover .bayan__body {
+  display: flex;
+  animation: show 0.4s forwards;
+}
+
+.bayan__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bayan__body-img img {
+  max-width: 20rem;  
+  max-height: 10rem;
+}
+
+.bayan__item-icon {
+  height: 0.7rem;
+  width: 0.7rem;
+  flex-shrink: 0;
+  background: url("./assets/icon/plus.svg") no-repeat center;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 820px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  .bayan__item-title {    
+    color: #111;
+    font-size: 1.3rem;
+  }
+  .bayan__body-title {
+    font-size: 1.1rem;
+  }
+  .bayan__input:checked + .bayan__item .bayan__body {   
+    animation: show 0.4s forwards;
+  }
+  .bayan__item-icon {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .bayan__item-title {    
+    font-size: 1rem;
+  }
+  .bayan__body-title {
+    font-size: 0.875rem;
+  }
+  .bayan__body-img img {
+    max-width: 100%;      
+  }
+}
+
+@keyframes show {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
